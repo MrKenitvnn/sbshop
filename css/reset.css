@@ -1,0 +1,6 @@
+html , body, div, span, h1, h2, h3, h4, h5 ,h6, objec, iframe, p,a,  blockquote, pre,abbr, acronym,
+address, big, code, del, cite, em, font, img, ins, kbd, q, samp, small, strike, strong, sub, sup, 
+tt, var ,dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thread, tr , th,table, td
+{margin: 0; padding:0; border:0; outline:0; text-decoration:none; list-style:none;font-size:14px; color:#333;}
+header, section, aside, nav, footer, figure, figcaption{display: block;}
+input, textare, select{outline :none;}
