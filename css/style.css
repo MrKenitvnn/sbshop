@@ -115,7 +115,7 @@ ul.nav li:nth-child(5){
 	width: 160px;
 }
 
-
+.menu-top ul li.on,
 .menu-top ul li:hover{
 	background:#FFF;
 }
@@ -133,6 +133,10 @@ ul.nav li:nth-child(5){
 }
 .menu-top ul li:nth-child(5):hover a{
 	background: url('../images/list-menu.png') -644px 8px;
+}
+
+.menu-top ul li:nth-child(1) a.on{
+	background: url('../images/list-menu.png') 0px 13px;
 }
 
 .menu-top ul li:nth-child(1) a{
@@ -576,6 +580,7 @@ ul.menu-main-nav-content li a:hover{
 	padding:3px 15px;
 	background: #838383;
 	color: #FFF;
+	font-size: 12px;
 }
 .hd-lien-he ul li{
 	width:160px;
@@ -674,7 +679,7 @@ ul.menu-main-nav-content li a:hover{
 	font-size: 11px;
 	margin-left: 10px; 
 	color: #787878;
-	height: 29px;
+	height: 28px;
 	overflow: hidden;
 }
 

@@ -5,7 +5,7 @@ $(document).ready(function(){
 	console.log(width);
 
 	// check screen width
-	if (width> 1400) {
+	if (width> 1500) {
 		$isLargeScreen = true;
 
 		$('.ads-left').css({"left":"70px"});		
@@ -47,8 +47,8 @@ $(window).scroll(function() {
     }
 
     var leng = $(document).height() - height; 
-    if (leng <1080) {
-    	$('.ads-list').css({"position":"absolute","top": $(document).height()-1079+"px"});
+    if (leng <1180) {
+    	$('.ads-list').css({"position":"absolute","top": $(document).height()-1200+"px"});
     }
 
     // console.log(leng);
