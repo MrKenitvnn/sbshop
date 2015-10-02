@@ -20,9 +20,6 @@ $(document).ready(function(){
 		$('.ads-right').css({"right":"0px"});
 	}
 
-
-	// 
-
 });
 
 // detect scroll to fixed ads

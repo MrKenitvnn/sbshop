@@ -17,10 +17,10 @@ body{
 }
 li,  p, span, h2, h3, label{
     font-family: "Open Sans", sans-serif;
-    font-weight: 400 !important;
+    font-weight: 400;
     color:#252424;
 }
-a, p{
+a, p, span{
 	font-family: Verdana;
 }
 span{
@@ -233,7 +233,8 @@ ul.register li a{
 	font-size: 16px;
 }
 .menu-main{
-	height: 400px;
+	height: auto;
+	overflow: hidden;
 	position: relative;
 	background: linear-gradient(#FFF, #dedede);
 	background: -webkit-linear-gradient(#FFF, #dedede);
@@ -365,7 +366,8 @@ ul.menu-main-nav-content li a:hover{
 	width: 745px;
 }
 .list-prd-new{
-	min-height:385px;
+	height: auto;
+	overflow: hidden;
 }
 .prd-item-new{
 	width: 182px;
@@ -374,7 +376,12 @@ ul.menu-main-nav-content li a:hover{
 	margin:0px 22px 35px 0px;
 	overflow:  hidden;
 }
-.prd-item-new:nth-child(5),.prd-item-new:nth-child(10),.prd-item-new:nth-child(15){
+.prd-item-new:nth-child(5),
+.prd-item-new:nth-child(10),
+.prd-item-new:nth-child(15),
+.prd-item-new:nth-child(20),
+.prd-item-new:nth-child(25),
+.prd-item-new:nth-child(30){
 	margin-right: 0px;
 	margin-left: 2px;
 }
@@ -698,3 +705,193 @@ ul.menu-main-nav-content li a:hover{
 .sale-off-red{
 	background: url('../images/icon-sale-off-red.png');
 }
+
+/**
+* Trang San Pham
+**/
+.menu-cate-top{
+	height: auto;
+}
+ul.ul-cate-top{
+	height: auto;
+	overflow: hidden;
+	background: #dedede;
+	padding-left: 55px;
+}
+ul.ul-cate-top li{
+	height: 60px;
+	min-width: 180px;
+	line-height: 60px;
+	text-align: left;
+	float: left;
+}
+ul.ul-cate-top li:hover a,
+ul.ul-cate-top li.on a{
+	color: #3cac31;
+	text-decoration: underline;
+}
+ul.ul-cate-top li a{
+	font-weight: 600;
+	text-shadow: 1px 1px #FFF;
+}
+
+.cate-nav-top img{
+	width: 100%;
+	border-top: 1px solid #FFF;
+}
+
+.cate-nav-filter{
+	height: 40px;
+	padding: 20px;
+	text-align: center;
+}
+.cate-nav-filter span{
+	color: #3f464a;
+	font-size: 16px;
+}
+.cate-nav-filter label span{
+	position: relative;
+	font-size: 13px;
+	left: -45px;
+}
+.cate-nav-filter input[type="text"]{
+	height: 40px;
+	width: 210px;
+	padding-left: 10px;
+	padding-right: 50px;
+	border: 1px solid #c2c2c2;
+	border-radius: 30px;
+}
+.cate-nav-filter input[type="submit"]{
+	background:#3cac31;
+	color: #FFF;
+	font-size: 18px;
+	border:none;
+	padding: 10px 40px;
+	border-radius: 30px;
+	cursor: hand;
+}
+.cate-nav-filter input[type="button"]{
+	height: 30px;
+	line-height: 30px;
+	padding:0px 20px;
+	color: #a9a9a9;
+	background: #FFF;
+	border: 1px solid #c2c2c2;
+	border-radius: 5px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.cate-nav-filter input[type="button"].on{
+	color: #2d2d2d;
+	text-shadow: 1px 1px #FFF;
+	background: -webkit-linear-gradient(#FFF, #c0c0c0);
+    	background: -moz-linear-gradient(#FFF, #c0c0c0);
+    	background: -o-linear-gradient(#FFF, #c0c0c0);
+    	background: linear-gradient(#FFF, #c0c0c0);
+	box-shadow: 1px 1px #FFF;
+}
+.title-cate h2{
+	font-size: 24px;
+}
+.title-cate hr{
+	width: 600px;
+	float: right;
+}
+.title-cate span{
+	float: right;
+	font-size: 12px;
+}
+.cate-prd-nav{
+	width: 100%;
+	text-align: center;
+	margin-bottom:45px;
+}
+.cate-prd-nav ul {
+	width: 390px;
+	overflow: hidden;
+	margin: 0px auto;
+}
+.cate-prd-nav ul li{
+	width: 28px;
+	height: 26px;
+	line-height: 26px;
+	float: left;
+	border:1px solid #c2c2c2;
+	background: #f8f8f8;
+	margin: 2px;
+}
+.cate-prd-nav ul li:first-child,
+.cate-prd-nav ul li:last-child{
+	background: none !important;
+	border:none !important;
+	margin:5px 35px;
+}
+.cate-prd-nav ul li a{
+	padding: 9px;
+	color: #767676;
+}
+.cate-prd-nav ul li.on,
+.cate-prd-nav ul li:hover{
+	background: #3cac31;
+	border:1px solid #3cac31;
+}
+.cate-prd-nav ul li.on a,
+.cate-prd-nav ul li:hover a{
+	color: #FFF;
+}
+.slider-danhmuc{
+
+}
+.slider-danhmuc-title{
+	height: 38px;
+	border:1px solid #FFF;
+	line-height: 38px;
+	background: linear-gradient(#FFF, #ebebeb);
+	background: -webkit-linear-gradient(#FFF, #ebebeb);
+    	background: -moz-linear-gradient(#FFF, #ebebeb);
+    	background: -o-linear-gradient(#FFF, #ebebeb);
+
+}
+.slider-danhmuc-title h2{
+	font-size:14px;
+	font-family: Verdana;
+	float: left;
+	margin-left: 20px;
+}
+.slider-danhmuc-title img{
+	margin: 10px 10px 0px 0px;
+	float: right;
+}
+
+
+
+
+/**
+ * San Pham Chi Tiet
+ **/
+.prd-details-page ul{
+}
+.prd-details-page ul li{
+	height: 45px;
+	line-height: 25px;
+	float: left;
+}
+.prd-details-page ul li a{
+	color: #9b9b9b;
+	padding: 0px 15px;
+	border-right: 1px solid #c3c3c3;
+}
+.prd-details-page ul li:first-child a{
+	padding-left: 0px;
+}
+.nav-prd-detail .on{
+	color: #000;
+	border-right: none;
+}
+
+.prd-details-page hr{
+	width: 1000px;
+}
+
