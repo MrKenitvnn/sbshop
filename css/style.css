@@ -21,12 +21,12 @@
 body{
 	background: #dedede;
 }
-li,  p, span, h2, h3, label{
+li,  p, h2, h3, label{
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     color:#252424;
 }
-a, p, span{
+a, p, span, td{
 	font-family: Verdana;
 }
 span{
@@ -677,13 +677,39 @@ ul.menu-main-nav-content li a:hover{
 	float: left;
 	margin-right: 85px;
 	line-height: 40px;
+	position: relative;
 }
-.counter-visit{
+.counter-visit,
+.counter-vs-total{
 	padding: 2px 5px;
 	border-radius: 3px;
 	background:#FFF;
+	position: relative;
 }
-
+.copy-right ul li span.counter-visit::before{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 3px 6px 3px 0;
+	border-color: transparent #FFF transparent transparent;
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 6px;
+	left: -6px;
+}
+.counter-vs-total::before{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 3px 6px 3px 0;
+	border-color: transparent #FFF transparent transparent;
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 6px;
+	left: -7px;
+}
 /**
 @color-base: #dedede;
 @color-des: #787878;
@@ -977,9 +1003,7 @@ img.prd-img-detail-big{
 .prd-del-info>div>span{
 	font-size:13px;
 }
-ul.prd-color-ul{}
-ul.prd-color-ul li{}
-ul.prd-color-ul li span{
+span.prd-button-color{
 	width: 20px;
 	height: 20px;
 	margin-left: 5px;
@@ -990,12 +1014,8 @@ ul.prd-color-ul li span{
 	cursor:hand;
 	background: #ff0000;
 }
-
-ul.prd-size-ul{}
-ul.prd-size-ul li{}
-ul.prd-size-ul li span{
-	display: block;
-	padding: 0px 10px;
+span.prd-button-size{
+	padding: 3px 10px;
 	border: 1px solid #c4c4c4;
 	cursor:hand;
 	font-size:12px;
@@ -1163,4 +1183,194 @@ ul.prd-size-ul li span{
 .prd-del-huong-dan hr{
 	width: 360px;
 	float: right;
+}
+
+/**
+ * Thanh toan buoc 1
+ **/
+.payment-step-1{
+	text-align: center;
+}
+ul.payment-step-1-ul{
+	width: 100%;
+	height: 45px;
+	margin: 0px auto;
+	background: #e8e8e8;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+ul.payment-step-1-ul li{
+	height: 45px;
+	line-height: 45px;
+	display:inline-block;
+	margin: 0px;
+	padding: 0px;
+}
+ul.payment-step-1-ul li span{
+	border-right: 1px solid #bebebe;
+	padding: 0px 10px;	
+}
+ul.payment-step-1-ul li:last-child span{
+	border:none;
+	color:#000;
+}
+ul.payment-step-1-nav{
+	height: 210px;
+	margin-top: 35px;
+}
+ul.payment-step-1-nav li{
+	width: 250px;
+	height: 210px;
+	display: inline-block;
+	background: url('../images/bg-payment-step.png') no-repeat center top;
+	position: relative;	
+	text-align: center;
+}
+ul.payment-step-1-nav li:last-child{
+	margin-right: 0px;
+}
+ul.payment-step-1-nav li span:nth-child(2){
+	width: 250px;
+	position: absolute;
+	bottom: 40px;
+	left: 0px;
+}
+ul.payment-step-1-nav span.pay-step-img{
+	width:60px;
+	height: 60px;
+	display: block;
+	margin: 0px auto;
+	margin-top:42px;
+	position: relative;
+	background: url('../images/list-icon-payment.png');
+}
+span.pay-step-img-1{
+	left:8px;
+	background-position: 0px -60px !important;
+}
+span.pay-step-img-2{
+	background-position: -172px -60px !important;
+}
+span.pay-step-img-3{
+	left:5px;
+	background-position: -88px -60px !important;
+}
+.payment-step-1-nav .on span{
+	color: #000;
+}
+.on span.pay-step-img-1{
+	background-position: 0px 0px !important;
+}
+.on span.pay-step-img-2{
+	background-position: -172px 0px !important;
+}
+.on span.pay-step-img-3{
+	background-position: -88px 0px !important;
+}
+.triangle-payment-up{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	display: block;
+	margin: 0px auto;
+	border-width: 0 14px 28px 14px;
+	border-color: transparent transparent #ffffff transparent;
+	position: relative;
+	bottom: -80px;
+	display: none;
+}
+.on .triangle-payment-up{
+	display: block;
+}
+.pay-step-section{
+	height: auto;
+	overflow: hidden;
+	padding:20px;
+	background: #FFF;
+}
+.pay-step-section table{
+	width: 100%;
+	margin: 0px auto;
+	border-collapse: collapse;
+}
+.pay-step-section table td{
+	border:1px solid #d6d6d6;
+	text-align: center;
+}
+.pay-step-section table td span{
+	color: #000;
+}
+.pay-step-section table thead td{
+	height: 44px;
+	line-height: 44px;
+	font-size: 16px;
+}
+.pay-step-section table tbody td{
+	padding: 20px 0px 20px 0px;
+}
+.pay-step-section table td:nth-child(2){
+	width: 230px;
+	padding-left: 15px;
+	text-align: left;
+}
+.pay-step-section table td:nth-child(4){
+	width: 90px;
+}
+.pay-step-section table tbody td img{
+	border: 1px solid #dfdfe2;
+}
+.prd-button-size{
+}
+
+.pay-step-section table tbody tr:last-child td{
+	height: 38px;
+	line-height: 38px;
+	padding: 0px;
+	background: #efefef;
+}
+.pay-step-title{
+	color: #ff0000;
+	font-size: 18px;
+}
+
+.pay-step-customer-info{
+	height: auto;
+	overflow: hidden;
+	padding:20px;
+	background: #FFF;
+}
+.pay-step-cus-del{
+	width: 460px;
+	float: left;
+}
+.pay-step-cus-del:last-child{
+	float: right;
+}
+.pay-step-cus-del img{
+	display: block;
+	float: left;
+	margin: 20px 0px;
+}
+.pay-step-cus-del table{
+	width: 100%;
+	margin: 0px auto;
+	border-collapse: collapse;
+}
+.pay-step-cus-del table td{
+	border:1px solid #d5d5d5;
+	min-height: 38px;
+	line-height: 38px;
+	padding-left: 15px;
+}
+.pay-step-cus-del table td:nth-child(1){
+	width: 150px;
+}
+.pay-step-cus-del input[type="text"],
+.pay-step-cus-del input[type="number"]{
+	border:none;
+	border-bottom: 1px solid #e0e0e0;
+}
+.pay-step-cus-del input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:#d6d8d8;
 }
