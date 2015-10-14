@@ -48,6 +48,21 @@ hr{
 	position: relative;
 	top:-17px;
 }
+.bg-red{
+	background: #ff0000 !important;
+}
+.bg-green{
+	background: #5fcd1d !important;
+}
+.bg-blue{
+	background: #38d9f6 !important;
+}
+.bg-white{
+	background: #FFF !important;
+}
+.bg-black{
+	background: #000 !important;
+}
 
 /**
  * menu top
@@ -953,9 +968,38 @@ img.prd-img-detail-big{
 }
 .prd-del-info{
 	height: 173px;
+	margin-top: 20px;
+	padding-top: 15px;
 }
-ul.prd-size-ul li{
-	
+.prd-del-info span{
+	color:#1d1d1d;
+}
+.prd-del-info>div>span{
+	font-size:13px;
+}
+ul.prd-color-ul{}
+ul.prd-color-ul li{}
+ul.prd-color-ul li span{
+	width: 20px;
+	height: 20px;
+	margin-left: 5px;
+	display: block;
+	border-radius:50%;
+	border:1px solid #FFF;
+	box-shadow: 0px 0px 3px #e0e0e0;
+	cursor:hand;
+	background: #ff0000;
+}
+
+ul.prd-size-ul{}
+ul.prd-size-ul li{}
+ul.prd-size-ul li span{
+	display: block;
+	padding: 0px 10px;
+	border: 1px solid #c4c4c4;
+	cursor:hand;
+	font-size:12px;
+	margin-left: 5px;
 }
 
 .prd-img-3item{
@@ -1100,4 +1144,23 @@ ul.prd-size-ul li{
 	position: absolute;
 	right: 50px;
 	top:200px;
+}
+/**
+ * San Pham Chi Tiet
+ * Huong dan mua hang
+ **/
+.prd-del-huong-dan{
+	margin: 30px auto;
+	height: 210px;
+}
+.prd-del-huong-dan .hd-lien-he{
+	height: 210px !important;
+}
+
+.prd-del-huong-dan .hd-lien-he:first-child{
+	width: 490px;
+}
+.prd-del-huong-dan hr{
+	width: 360px;
+	float: right;
 }
