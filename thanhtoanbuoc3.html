@@ -70,17 +70,17 @@
 				<li><span>Thông tin đơn hàng</span></li>
 			</ul>
 			<ul class="payment-step-1-nav">
-				<li>
+				<li class="on">
 					<span class="pay-step-img pay-step-img-1">							
 					</span><span>GIỎ HÀNG</span>
 					<span class="triangle-payment-up"></span>
 				</li>
-				<li class="on">
+				<li>
 					<span class="pay-step-img pay-step-img-2"></span>
-					<span class="on">THÔNG TIN THANH TOÁN</span>
+					<span>THÔNG TIN THANH TOÁN</span>
 					<span class="triangle-payment-up"></span>	
 				</li>
-				<li >
+				<li>
 					<span class="pay-step-img pay-step-img-3"></span>
 					<span>HOÀN THÀNH</span>
 					<span class="triangle-payment-up"></span>
@@ -111,10 +111,41 @@
 						<span style="float:left">Kích thước:</span>
 						<span class="prd-button-size">M</span>
 					</td>
-					<td>5.000.000 VNĐ</td>
+					<td><span style="color:#ff0000">5.000.000</span> VNĐ</td>
 					<td>21</td>
 					<td>105.000.000 VNĐ</td>
-					<td>10%</td>
+					<td>
+						SALE <span style="color:#ff0000">10%</span><br/>
+						<span style="display:block;top:50px;right:-25px;position:relative">
+							<a href="#">
+								<span style="font-size:12px">Bỏ chọn &nbsp;</span>
+								<img style="position:relative;top:10px;" src="images/icon-delete-prd.png" alt="Delete">
+							</a>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td><img src="images/img-thumbnail-product.png" alt="Image Product"></td>
+					<td>
+						Áo thun nữ tay ngắn họa tiết thời trang - ATFZ.100S <br/><br/>
+						<span style="float:left">Màu sắc:&nbsp;&nbsp;&nbsp;&nbsp;</span>
+						<span style="float:left" class="prd-button-color bg-blue"></span>&nbsp; Xanh thẫm
+						<br/><br/>
+						<span style="float:left">Kích thước:</span>
+						<span class="prd-button-size">M</span>
+					</td>
+					<td><span style="color:#ff0000">5.000.000</span> VNĐ</td>
+					<td>21</td>
+					<td>105.000.000 VNĐ</td>
+					<td>
+						SALE <span style="color:#ff0000">10%</span><br/>
+						<span style="display:block;top:50px;right:-25px;position:relative">
+							<a href="#">
+								<span style="font-size:12px">Bỏ chọn &nbsp;</span>
+								<img style="position:relative;top:10px;" src="images/icon-delete-prd.png" alt="Delete">
+							</a>
+						</span>
+					</td>
 				</tr>
 				<tr>
 					<td colspan="6">
@@ -128,118 +159,92 @@
 	</section>
 	
 
-	<section class="clear frame pay-step-section">
-		<h2 class="pay-step-title">1. THÔNG TIN KHÁCH HÀNG</h2>
-		
-		<div class="pay-step-cus-del">
-			<img src="images/img-nguoi-dat-hang.png" alt="img nguoi nhan" />
-			<table cellspacing="0">
-				<tr>
-					<td>Họ tên</td>
-					<td><input type="text" placeholder="Nhập họ tên.." /></td>
-				</tr>
-				<tr>
-					<td>Giới tính</td>
-					<td><input type="text" placeholder="Nhập giới tính" /></td>
-				</tr>
-				<tr>
-					<td>Số di động</td>
-					<td><input type="text" placeholder="Nhập số di động.." /></td>
-				</tr>
-				<tr>
-					<td>Số điện thoại bàn</td>
-					<td><input type="number" placeholder="Có thể để trống.." /></td>
-				</tr>
-				<tr>
-					<td>Địa chỉ</td>
-					<td><textarea type="text" placeholder="Nhập địa chỉ.." style="height:70px;width:100%;border:none" ></textarea></td>
-				</tr>
-				<tr>
-					<td>Số tài khoản</td>
-					<td><input type="number" placeholder="Có thể để trống.." /></td>
-				</tr>
-				<tr>
-					<td>Xuất HĐ VAT</td>
-					<td><input type="checkbox" /></td>
-				</tr>
-			</table>
-		</div>
-
-		<!-- thong tin nguoi nhan hang -->
-		<div class="pay-step-cus-del">
-			<img src="images/img-dia-chi-giao-hang.png" alt="img nguoi nhan" />
-			<br/><br/>
-			
-			<label for="similar" style="margin-left:10px;">
-				<input type="checkbox" name="similar" id="similar" />
-				Là địa chỉ đặt hàng
-			</label>
-			<table cellspacing="0">
-				<tr>
-					<td>Họ tên</td>
-					<td><input type="text" placeholder="Nhập họ tên.." /></td>
-				</tr>
-				<tr>
-					<td>Giới tính</td>
-					<td><input type="text" placeholder="Nhập giới tính" /></td>
-				</tr>
-				<tr>
-					<td>Số di động</td>
-					<td><input type="text" placeholder="Nhập số di động.." /></td>
-				</tr>
-				<tr>
-					<td>Số điện thoại bàn</td>
-					<td><input type="number" placeholder="Có thể để trống.." /></td>
-				</tr>
-				<tr>
-					<td>Địa chỉ</td>
-					<td><textarea type="text" placeholder="Nhập địa chỉ.." style="height:70px;width:100%;border:none" ></textarea></td>
-				</tr>
-				<tr>
-					<td style="height:100px">Thông tin khác</td>
-					<td><textarea type="text" placeholder="Có thể để trống.." style="height:100px;border:none;width:100%"></textarea></td>
-				</tr>
-			</table>
-		</div>
-	</section>
-
-
-	<section class="clear frame pay-step-section">
-		<h2 class="pay-step-title">2. HÌNH THỨC THANH TOÁN</h2><br/>
-		<div class="pay-step-2type">
-			<div>
-				<label for="vidientu"><input type="radio" name="vidientu" id="vidientu" />Vi Dien Tu</label><br/>
-				<a href="#"><img src="images/bank-ngan-luong.png" alt="ngan-luong" /></a>
-				<!-- <span>Thanh toán bằng ví điện tử	</span> -->
-			</div>
-			<div>
-				<label for="thenganhang"><input type="radio" name="vidientu" id="thenganhang" />Thanh toán với thẻ ngân hàng và internet banking</label><br/>
-				<ul>
-					<li><a href="#"><img src="images/bank-maritime.png" alt="maritimebank"></a></li>
-					<li><a href="#"><img src="images/bank-viettin.png" alt="viettinbank"></a></li>
-					<li><a href="#"><img src="images/bank-techcom.png" alt="techcombank"></a></li>
-					<li><a href="#"><img src="images/bank-vietcom.png" alt="vietcombank"></a></li>
-				</ul>
-				<!-- <span>Thanh toán bằng ví điện tử	</span> -->
-			</div>			
-		</div>
-	</section>
-
-
-	<section class="clear frame pay-step-section" style="margin-bottom: 45px">
-		<h2 class="pay-step-title">3. Hướng dẫn giao hàng</h2><br/>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed d
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed d
-		</p><br/>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed dLorem ipsum dolor sit amet, consectetur adipisicing elit, sed d
-			Lorem
-		</p>
-		<ul class="pay-step-button-bottom">
-			<li><a href="#" class="btn-back-to-cart"><img src="images/btn-back-to-cart.png" alt="back to cart"></a></li>
-			<li><a href="#" class="btn-next-step"><img src="images/btn-next-step-payment.png" alt="next-step"></a></li>
+	<section class="clear frame pay-step-section pay-step-confirm-info">
+		<ul class="clear pay-step-button-bottom">
+			<li>
+				<a href="#" class="btn-back-to-cart">
+					<img src="images/btn-shop-continue.png" alt="tiep-tuc-mua-sam" />
+				</a>
+			</li>
+			<li>
+				<a href="#" class="btn-next-step">
+					<img src="images/btn-oke-pay.png" alt="thanh-toan" style="position:relative;top:-5px"/>
+				</a>
+			</li>
 		</ul>
+	</section>
+
+
+	<section class="clear wrapper box-prd-sale-off">
+		<div class="frame">
+			<div class="title-main title-sale-off">
+				<h2>Sản phẩm khuyến mãi</h2>
+				<hr/>
+			</div>
+			<div class="list-prd-sale-off">
+				<div class="prd-item-sale-off">
+					<div>						
+						<a href="#">
+							<img src="images/img-sale-off-1.png" alt="product sale off" />
+						</a>
+						<div class="sale-off-green">
+							<span class="txt-sale-off"><span style="font-size:10px;" class="txt-sale-off">sale off</span>25%</span>
+						</div>
+					</div>
+					<h2 class="prd-name">HAN SUKEMHAN SUKEMHAN SUKEMHAN SUKEM</h2>
+					<p class="prd-des">Lorem ipsum dolor sit amet, consec tetur adipisicing elit,consec tetur adipisicing elit</p>
+				</div>
+				<div class="prd-item-sale-off">
+					<div>						
+						<a href="#">
+							<img src="images/img-sale-off-1.png" alt="product sale off" />
+						</a>
+						<div class="sale-off-blue">
+							<span class="txt-sale-off"><span style="font-size:10px;" class="txt-sale-off">sale off</span>25%</span>
+						</div>
+					</div>
+					<h2 class="prd-name">HAN SUKEMHAN SUKEMHAN SUKEMHAN SUKEM</h2>
+					<p class="prd-des">Lorem ipsum dolor sit amet, consec tetur adipisicing elit,consec tetur adipisicing elit</p>
+				</div>
+				<div class="prd-item-sale-off">
+					<div>						
+						<a href="#">
+							<img src="images/img-sale-off-1.png" alt="product sale off" />
+						</a>
+						<div class="sale-off-orange">
+							<span class="txt-sale-off"><span style="font-size:10px;" class="txt-sale-off">sale off</span>25%</span>
+						</div>
+					</div>
+					<h2 class="prd-name">HAN SUKEMHAN SUKEMHAN SUKEMHAN SUKEM</h2>
+					<p class="prd-des">Lorem ipsum dolor sit amet, consec tetur adipisicing elit,consec tetur adipisicing elit</p>
+				</div>
+				<div class="prd-item-sale-off">
+					<div>						
+						<a href="#">
+							<img src="images/img-sale-off-1.png" alt="product sale off" />
+						</a>
+						<div class="sale-off-blue">
+							<span class="txt-sale-off"><span style="font-size:10px;" class="txt-sale-off">sale off</span>25%</span>
+						</div>
+					</div>
+					<h2 class="prd-name">HAN SUKEMHAN SUKEMHAN SUKEMHAN SUKEM</h2>
+					<p class="prd-des">Lorem ipsum dolor sit amet, consec tetur adipisicing elit,consec tetur adipisicing elit</p>
+				</div>
+				<div class="prd-item-sale-off">
+					<div>						
+						<a href="#">
+							<img src="images/img-sale-off-1.png" alt="product sale off" />
+						</a>
+						<div class="sale-off-red">
+							<span class="txt-sale-off"><span style="font-size:10px;" class="txt-sale-off">sale off</span>25%</span>
+						</div>
+					</div>
+					<h2 class="prd-name">HAN SUKEMHAN SUKEMHAN SUKEMHAN SUKEM</h2>
+					<p class="prd-des">Lorem ipsum dolor sit amet, consec tetur adipisicing elit,consec tetur adipisicing elit</p>
+				</div>
+			</div>
+		</div>
+		<div class="bg-fix-sale-off"></div>
 	</section>
 
 
