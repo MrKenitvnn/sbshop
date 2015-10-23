@@ -223,7 +223,7 @@ ul.nav li:nth-child(5){
 }
 .search-main input[type="text"]{
 	width: 348px;
-	height: 31px;
+	height: 35px;
 	padding-left: 10px;
 	border: 1px solid #c2c2c2;
 	border-radius: 3px;
@@ -251,6 +251,9 @@ ul.nav li:nth-child(5){
 .search-main ul li:last-child{
 	padding-right: 0px;
 	border: none;
+}
+.search-main ul li:first-child{
+	padding-left: 0px;
 }
 .search-main ul li.on a{
 	color: #51bb47;
@@ -452,11 +455,14 @@ ul.menu-main-nav-content li a:hover{
 .prd-item-new ul li:last-child {
 	width: 51px;
 }
-.prd-item-new ul li  a{
+.prd-item-new ul li a{
 	width: 51px;
 	height: 43px;
 	text-align: center;
 	display: block;
+}
+.prd-item-new ul li a img{
+	margin-top: 15px;
 }
 
 /**
@@ -863,12 +869,18 @@ ul.ul-cate-top li a{
 	font-size: 24px;
 }
 .title-cate hr{
-	width: 600px;
+	width: 660px;
 	float: right;
+	margin-right: 10px;
+	position: relative;
+	top:-13px;
 }
 .title-cate span{
 	float: right;
 	font-size: 12px;
+	position: relative;
+	top:-20px;
+	color: #232323;
 }
 .cate-prd-nav{
 	width: 100%;
@@ -1607,6 +1619,7 @@ a.btn-next-step{
 	color: #FFF;
 	padding: 7px 15px 7px 15px;
 	border-radius: 3px;
+	cursor: hand;
 }
 
 /**
